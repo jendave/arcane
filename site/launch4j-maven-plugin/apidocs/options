@@ -1,0 +1,24 @@
+-classpath
+'/Users/dhudson/mtg/arcane/maven/launch4j-maven-plugin/target/checkout/target/classes:/Users/dhudson/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar:/Users/dhudson/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.jar:/Users/dhudson/.m2/repository/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar:/Users/dhudson/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar:/Users/dhudson/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.1.1/sisu-inject-bean-2.1.1.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar:/Users/dhudson/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar:/Users/dhudson/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar:/Users/dhudson/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/dhudson/.m2/repository/foxtrot/foxtrot-core/3.0/foxtrot-core-3.0.jar:/Users/dhudson/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-model/3.0.3/maven-model-3.0.3.jar:/Users/dhudson/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar:/Users/dhudson/.m2/repository/org/sonatype/sisu/sisu-guice/2.9.4/sisu-guice-2.9.4-no_aop.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar:/Users/dhudson/.m2/repository/com/thoughtworks/xstream/xstream/1.4.1/xstream-1.4.1.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar:/Users/dhudson/.m2/repository/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.jar:/Users/dhudson/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar:/Users/dhudson/.m2/repository/org/apache/ant/ant/1.8.2/ant-1.8.2.jar:/Users/dhudson/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/2.1.1/sisu-inject-plexus-2.1.1.jar:/Users/dhudson/.m2/repository/org/apache/maven/maven-plugin-api/3.0.3/maven-plugin-api-3.0.3.jar:/Users/dhudson/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/Users/dhudson/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar'
+-encoding
+'ISO-8859-1'
+-protected
+-sourcepath
+'/Users/dhudson/mtg/arcane/maven/launch4j-maven-plugin/target/checkout/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2011. All Rights Reserved.'
+-charset
+'ISO-8859-1'
+-d
+'/Users/dhudson/mtg/arcane/maven/launch4j-maven-plugin/target/checkout/target/site/apidocs'
+-docencoding
+'ISO-8859-1'
+-doctitle
+'Maven Launch4j Plugin 1.3.4 API'
+-linkoffline
+'http://download.oracle.com/javase/6/docs/api' '/Users/dhudson/mtg/arcane/maven/launch4j-maven-plugin/target/checkout/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Maven Launch4j Plugin 1.3.4 API'

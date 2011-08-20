@@ -1,0 +1,5 @@
+com.akathist.maven.plugins.launch4j
+net.sf.launch4j.ant
+net.sf.launch4j.binding
+net.sf.launch4j
+net.sf.launch4j.config
