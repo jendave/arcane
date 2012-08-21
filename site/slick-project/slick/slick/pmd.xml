@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.3" timestamp="2012-08-21T13:30:56.421">
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/AngelCodeFont.java">
+<violation beginline="84" endline="84" begincolumn="19" endcolumn="25" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="AngelCodeFont" variable="leading" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'leading'.
+</violation>
+<violation beginline="209" endline="209" begincolumn="20" endcolumn="23" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick" class="AngelCodeFont" method="parseFnt" variable="info" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'info'.
+</violation>
+<violation beginline="216" endline="216" begincolumn="20" endcolumn="23" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick" class="AngelCodeFont" method="parseFnt" variable="page" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'page'.
+</violation>
+<violation beginline="227" endline="229" begincolumn="53" endcolumn="21" rule="EmptyIfStmt" ruleset="Basic Rules" package="org.newdawn.slick" class="AngelCodeFont" method="parseFnt" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyIfStmt" priority="3">
+Avoid empty if statements
+</violation>
+<violation beginline="236" endline="238" begincolumn="56" endcolumn="21" rule="EmptyIfStmt" ruleset="Basic Rules" package="org.newdawn.slick" class="AngelCodeFont" method="parseFnt" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyIfStmt" priority="3">
+Avoid empty if statements
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/AppGameContainer.java">
+<violation beginline="174" endline="177" begincolumn="29" endcolumn="29" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick" class="AppGameContainer" method="setDisplayMode" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="463" endline="464" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick" class="AppGameContainer" method="gameLoop" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="485" endline="487" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick" class="AppGameContainer" method="gameLoop" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/AppletGameContainer.java">
+<violation beginline="18" endline="18" begincolumn="8" endcolumn="21" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.newdawn.slick" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'java.awt.Color'
+</violation>
+<violation beginline="19" endline="19" begincolumn="8" endcolumn="20" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.newdawn.slick" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'java.awt.Font'
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/BigImage.java">
+<violation beginline="213" endline="213" begincolumn="21" endcolumn="26" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick" class="BigImage" method="build" variable="finalX" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'finalX'.
+</violation>
+<violation beginline="214" endline="214" begincolumn="21" endcolumn="26" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick" class="BigImage" method="build" variable="finalY" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'finalY'.
+</violation>
+<violation beginline="387" endline="387" begincolumn="15" endcolumn="16" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick" class="BigImage" method="drawEmbedded" variable="sx" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'sx'.
+</violation>
+<violation beginline="388" endline="388" begincolumn="15" endcolumn="16" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick" class="BigImage" method="drawEmbedded" variable="sy" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'sy'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/CanvasGameContainer.java">
+<violation beginline="156" endline="158" begincolumn="19" endcolumn="9" rule="UselessOverridingMethod" ruleset="Basic Rules" package="org.newdawn.slick" class="CanvasGameContainer$Container" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/GameContainer.java">
+<violation beginline="538" endline="539" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick" class="GameContainer" method="sleep" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="709" endline="711" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick" class="GameContainer" method="updateAndRender" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/Graphics.java">
+<violation beginline="703" endline="703" begincolumn="15" endcolumn="23" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Graphics" method="drawRect" variable="lineWidth" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'lineWidth'.
+</violation>
+<violation beginline="1372" endline="1372" begincolumn="17" endcolumn="19" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Graphics" method="copyArea" variable="tex" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'tex'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/Image.java">
+<violation beginline="194" endline="194" begincolumn="21" endcolumn="27" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Image" variable="flipped" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'flipped'.
+</violation>
+<violation beginline="198" endline="198" begincolumn="19" endcolumn="29" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Image" variable="transparent" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'transparent'.
+</violation>
+<violation beginline="1661" endline="1661" begincolumn="13" endcolumn="13" rule="EmptyStatementNotInLoop" ruleset="Basic Rules" package="org.newdawn.slick" class="Image" method="drawEmbedded" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/Input.java">
+<violation beginline="315" endline="315" begincolumn="30" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="BUTTON2" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'BUTTON2'.
+</violation>
+<violation beginline="319" endline="319" begincolumn="30" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="BUTTON3" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'BUTTON3'.
+</violation>
+<violation beginline="323" endline="323" begincolumn="30" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="BUTTON4" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'BUTTON4'.
+</violation>
+<violation beginline="327" endline="327" begincolumn="30" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="BUTTON5" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'BUTTON5'.
+</violation>
+<violation beginline="331" endline="331" begincolumn="30" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="BUTTON6" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'BUTTON6'.
+</violation>
+<violation beginline="335" endline="335" begincolumn="30" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="BUTTON7" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'BUTTON7'.
+</violation>
+<violation beginline="339" endline="339" begincolumn="30" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="BUTTON8" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'BUTTON8'.
+</violation>
+<violation beginline="343" endline="343" begincolumn="30" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="BUTTON9" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'BUTTON9'.
+</violation>
+<violation beginline="347" endline="347" begincolumn="30" endcolumn="37" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="BUTTON10" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'BUTTON10'.
+</violation>
+<violation beginline="493" endline="493" begincolumn="17" endcolumn="22" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="clickX" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'clickX'.
+</violation>
+<violation beginline="497" endline="497" begincolumn="17" endcolumn="22" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="Input" variable="clickY" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'clickY'.
+</violation>
+<violation beginline="1166" endline="1168" begincolumn="11" endcolumn="9" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick" class="Input" method="initControllers" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="1228" endline="1231" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick" class="Input" method="considerDoubleClick" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="1248" endline="1249" begincolumn="37" endcolumn="13" rule="EmptyWhileStmt" ruleset="Basic Rules" package="org.newdawn.slick" class="Input" method="poll" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyWhileStmt" priority="3">
+Avoid empty while statements
+</violation>
+<violation beginline="1250" endline="1251" begincolumn="34" endcolumn="13" rule="EmptyWhileStmt" ruleset="Basic Rules" package="org.newdawn.slick" class="Input" method="poll" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyWhileStmt" priority="3">
+Avoid empty while statements
+</violation>
+<violation beginline="1272" endline="1274" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick" class="Input" method="poll" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="1365" endline="1381" begincolumn="21" endcolumn="21" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick" class="Input" method="poll" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="1445" endline="1458" begincolumn="21" endcolumn="21" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick" class="Input" method="poll" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/TrueTypeFont.java">
+<violation beginline="9" endline="9" begincolumn="8" endcolumn="21" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.newdawn.slick" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'java.awt.Color'
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/UnicodeFont.java">
+<violation beginline="12" endline="12" begincolumn="8" endcolumn="20" rule="DuplicateImports" ruleset="Import Statement Rules" package="org.newdawn.slick" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#DuplicateImports" priority="4">
+Avoid duplicate imports such as 'java.awt.Font'
+</violation>
+<violation beginline="182" endline="182" begincolumn="25" endcolumn="41" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick" class="UnicodeFont" variable="eldestDisplayList" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'eldestDisplayList'.
+</violation>
+<violation beginline="294" endline="295" begincolumn="11" endcolumn="9" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick" class="UnicodeFont" method="initializeFont" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="454" endline="455" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick" class="UnicodeFont" method="clearGlyphs" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="1033" endline="1035" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick" class="UnicodeFont" method="getFontFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/command/InputProvider.java">
+<violation beginline="34" endline="34" begincolumn="19" endcolumn="23" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.command" class="InputProvider" variable="input" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'input'.
+</violation>
+<violation beginline="175" endline="177" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.command" class="InputProvider" method="unbindCommand" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/BasicTriangulator.java">
+<violation beginline="249" endline="249" begincolumn="18" endcolumn="18" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="BasicTriangulator" method="process" variable="m" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'm'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/Circle.java">
+<violation beginline="129" endline="129" begincolumn="21" endcolumn="39" rule="UnusedPrivateMethod" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Circle" method="contains" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateMethod" priority="3">
+Avoid unused private methods such as 'contains(Line)'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/GeomUtil.java">
+<violation beginline="58" endline="60" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="GeomUtil" method="subtract" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="65" endline="67" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="GeomUtil" method="subtract" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="129" endline="132" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="GeomUtil" method="union" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="140" endline="143" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="GeomUtil" method="union" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="199" endline="202" begincolumn="21" endcolumn="21" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="GeomUtil" method="combine" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/Line.java">
+<violation beginline="26" endline="26" begincolumn="19" endcolumn="28" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" variable="lenSquared" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'lenSquared'.
+</violation>
+<violation beginline="35" endline="35" begincolumn="22" endcolumn="22" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" variable="v" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'v'.
+</violation>
+<violation beginline="39" endline="39" begincolumn="22" endcolumn="23" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" variable="v2" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'v2'.
+</violation>
+<violation beginline="43" endline="43" begincolumn="22" endcolumn="25" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" variable="proj" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'proj'.
+</violation>
+<violation beginline="52" endline="52" begincolumn="22" endcolumn="26" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" variable="other" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'other'.
+</violation>
+<violation beginline="57" endline="57" begincolumn="21" endcolumn="29" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" variable="outerEdge" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'outerEdge'.
+</violation>
+<violation beginline="61" endline="61" begincolumn="21" endcolumn="29" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" variable="innerEdge" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'innerEdge'.
+</violation>
+<violation beginline="71" endline="73" begincolumn="12" endcolumn="5" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'inner'.
+</violation>
+<violation beginline="71" endline="73" begincolumn="12" endcolumn="5" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'outer'.
+</violation>
+<violation beginline="106" endline="108" begincolumn="12" endcolumn="5" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Line" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'dummy'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/MannTriangulator.java">
+<violation beginline="140" endline="170" begincolumn="29" endcolumn="29" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="MannTriangulator" method="triangulate" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="208" endline="213" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="MannTriangulator" method="triangulate" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/NeatTriangulator.java">
+<violation beginline="379" endline="379" begincolumn="18" endcolumn="27" rule="UnusedPrivateMethod" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="NeatTriangulator" method="optimize" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateMethod" priority="3">
+Avoid unused private methods such as 'optimize()'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/RoundedRectangle.java">
+<violation beginline="124" endline="127" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="RoundedRectangle" method="setCornerRadius" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/Shape.java">
+<violation beginline="621" endline="621" begincolumn="21" endcolumn="29" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="Shape" method="calculateTriangles" variable="clockwise" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'clockwise'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/ShapeRenderer.java">
+<violation beginline="32" endline="54" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="63" endline="89" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="110" endline="130" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="139" endline="156" begincolumn="26" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="165" endline="167" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="177" endline="179" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="190" endline="218" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="230" endline="269" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="242" endline="242" begincolumn="21" endcolumn="24" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" method="textureFit" variable="maxX" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'maxX'.
+</violation>
+<violation beginline="243" endline="243" begincolumn="21" endcolumn="24" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" method="textureFit" variable="maxY" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'maxY'.
+</violation>
+<violation beginline="278" endline="301" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="314" endline="348" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="358" endline="378" begincolumn="25" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Basic Rules" package="org.newdawn.slick.geom" class="ShapeRenderer" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/muffin/FileMuffin.java">
+<violation beginline="64" endline="66" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.muffin" class="FileMuffin" method="loadFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/muffin/WebstartMuffin.java">
+<violation beginline="126" endline="128" begincolumn="11" endcolumn="9" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.muffin" class="WebstartMuffin" method="loadFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="128" endline="130" begincolumn="11" endcolumn="9" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.muffin" class="WebstartMuffin" method="loadFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/AiffData.java">
+<violation beginline="236" endline="237" begincolumn="11" endcolumn="9" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.openal" class="AiffData" method="create" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/OggDecoder.java">
+<violation beginline="21" endline="21" begincolumn="20" endcolumn="29" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.openal" class="OggDecoder" variable="convbuffer" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'convbuffer'.
+</violation>
+<violation beginline="317" endline="317" begincolumn="17" endcolumn="20" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.openal" class="OggDecoder" method="getData" variable="done" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'done'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/OggInputStream.java">
+<violation beginline="365" endline="367" begincolumn="47" endcolumn="29" rule="EmptyIfStmt" ruleset="Basic Rules" package="org.newdawn.slick.openal" class="OggInputStream" method="readPCM" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyIfStmt" priority="3">
+Avoid empty if statements
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/OpenALStreamPlayer.java">
+<violation beginline="151" endline="152" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.openal" class="OpenALStreamPlayer" method="close" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/SoundStore.java">
+<violation beginline="65" endline="65" begincolumn="17" endcolumn="26" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.openal" class="SoundStore" variable="nextSource" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'nextSource'.
+</violation>
+<violation beginline="450" endline="475" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.openal" class="SoundStore" method="playAsSoundAt" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/WaveData.java">
+<violation beginline="240" endline="241" begincolumn="11" endcolumn="9" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.openal" class="WaveData" method="create" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/ImageDataFactory.java">
+<violation beginline="49" endline="51" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.opengl" class="ImageDataFactory" method="checkProperty" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="62" endline="62" begincolumn="27" endcolumn="35" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="ImageDataFactory" method="getImageDataFor" variable="imageData" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'imageData'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/InternalTextureLoader.java">
+<violation beginline="612" endline="612" begincolumn="17" endcolumn="23" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="InternalTextureLoader" method="getTexture" variable="flipped" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'flipped'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/PNGDecoder.java">
+<violation beginline="76" endline="76" begincolumn="30" endcolumn="33" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="PNGDecoder" variable="IEND" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'IEND'.
+</violation>
+<violation beginline="660" endline="660" begincolumn="19" endcolumn="21" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="PNGDecoder" method="unfilterUp" variable="bpp" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'bpp'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/PNGImageData.java">
+<violation beginline="35" endline="35" begincolumn="24" endcolumn="30" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="PNGImageData" variable="decoder" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'decoder'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/TGAImageData.java">
+<violation beginline="127" endline="127" begincolumn="15" endcolumn="26" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="TGAImageData" method="loadImage" variable="colorMapType" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'colorMapType'.
+</violation>
+<violation beginline="129" endline="129" begincolumn="15" endcolumn="23" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="TGAImageData" method="loadImage" variable="cMapStart" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'cMapStart'.
+</violation>
+<violation beginline="130" endline="130" begincolumn="15" endcolumn="24" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="TGAImageData" method="loadImage" variable="cMapLength" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'cMapLength'.
+</violation>
+<violation beginline="131" endline="131" begincolumn="15" endcolumn="23" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="TGAImageData" method="loadImage" variable="cMapDepth" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'cMapDepth'.
+</violation>
+<violation beginline="132" endline="132" begincolumn="15" endcolumn="21" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="TGAImageData" method="loadImage" variable="xOffset" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'xOffset'.
+</violation>
+<violation beginline="133" endline="133" begincolumn="15" endcolumn="21" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl" class="TGAImageData" method="loadImage" variable="yOffset" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'yOffset'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/pbuffer/GraphicsFactory.java">
+<violation beginline="38" endline="38" begincolumn="28" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.opengl.pbuffer" class="GraphicsFactory" variable="init" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'init'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/renderer/VAOGLRenderer.java">
+<violation beginline="251" endline="255" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.opengl.renderer" class="VAOGLRenderer" method="glVertex3f" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/particles/ConfigurableEmitter.java">
+<violation beginline="375" endline="377" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.particles" class="ConfigurableEmitter" method="update" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="392" endline="394" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.particles" class="ConfigurableEmitter" method="update" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="566" endline="570" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.particles" class="ConfigurableEmitter" method="replayCheck" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="567" endline="569" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.particles" class="ConfigurableEmitter" method="replayCheck" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="622" endline="622" begincolumn="23" endcolumn="26" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.particles" class="ConfigurableEmitter$SimpleValue" variable="next" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'next'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/particles/ParticleSystem.java">
+<violation beginline="532" endline="535" begincolumn="21" endcolumn="21" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.particles" class="ParticleSystem" method="update" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="616" endline="619" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.particles" class="ParticleSystem" method="releaseAll" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/state/StateBasedGame.java">
+<violation beginline="228" endline="230" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.state" class="StateBasedGame" method="render" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="299" endline="301" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.state" class="StateBasedGame" method="update" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/state/transition/SelectTransition.java">
+<violation beginline="38" endline="38" begincolumn="19" endcolumn="28" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.state.transition" class="SelectTransition" variable="background" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'background'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/Diagram.java">
+<violation beginline="138" endline="142" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.svg" class="Diagram" method="addFigure" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/Gradient.java">
+<violation beginline="19" endline="19" begincolumn="20" endcolumn="23" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.svg" class="Gradient" variable="name" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'name'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/InkscapeLoader.java">
+<violation beginline="122" endline="122" begincolumn="21" endcolumn="47" rule="UnusedPrivateMethod" ruleset="Unused Code Rules" package="org.newdawn.slick.svg" class="InkscapeLoader" method="loadDiagram" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateMethod" priority="3">
+Avoid unused private methods such as 'loadDiagram(InputStream)'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/LinearGradientFill.java">
+<violation beginline="26" endline="26" begincolumn="22" endcolumn="29" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.svg" class="LinearGradientFill" variable="gradient" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'gradient'.
+</violation>
+<violation beginline="34" endline="34" begincolumn="19" endcolumn="23" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.svg" class="LinearGradientFill" variable="shape" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'shape'.
+</violation>
+<violation beginline="43" endline="65" begincolumn="12" endcolumn="5" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="org.newdawn.slick.svg" class="LinearGradientFill" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'shape'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/NonGeometricData.java">
+<violation beginline="110" endline="112" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.svg" class="NonGeometricData" method="addAttribute" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/RadialGradientFill.java">
+<violation beginline="25" endline="25" begincolumn="22" endcolumn="29" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.svg" class="RadialGradientFill" variable="gradient" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'gradient'.
+</violation>
+<violation beginline="29" endline="29" begincolumn="19" endcolumn="23" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.newdawn.slick.svg" class="RadialGradientFill" variable="shape" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'shape'.
+</violation>
+<violation beginline="38" endline="55" begincolumn="12" endcolumn="5" rule="UnusedFormalParameter" ruleset="Unused Code Rules" package="org.newdawn.slick.svg" class="RadialGradientFill" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'shape'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/SimpleDiagramRenderer.java">
+<violation beginline="100" endline="107" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.svg" class="SimpleDiagramRenderer" method="render" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/inkscape/EllipseProcessor.java">
+<violation beginline="52" endline="54" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.svg.inkscape" class="EllipseProcessor" method="handles" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/inkscape/LineProcessor.java">
+<violation beginline="120" endline="122" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.svg.inkscape" class="LineProcessor" method="handles" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/inkscape/PathProcessor.java">
+<violation beginline="32" endline="32" begincolumn="13" endcolumn="17" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.svg.inkscape" class="PathProcessor" method="processPoly" variable="count" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'count'.
+</violation>
+<violation beginline="34" endline="34" begincolumn="19" endcolumn="21" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.svg.inkscape" class="PathProcessor" method="processPoly" variable="pts" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'pts'.
+</violation>
+<violation beginline="119" endline="121" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.svg.inkscape" class="PathProcessor" method="handles" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/inkscape/PolygonProcessor.java">
+<violation beginline="35" endline="35" begincolumn="19" endcolumn="21" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.svg.inkscape" class="PolygonProcessor" method="processPoly" variable="pts" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'pts'.
+</violation>
+<violation beginline="112" endline="114" begincolumn="13" endcolumn="13" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.svg.inkscape" class="PolygonProcessor" method="handles" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/Base64.java">
+<violation beginline="295" endline="295" begincolumn="24" endcolumn="52" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="300" endline="300" begincolumn="28" endcolumn="57" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="301" endline="301" begincolumn="27" endcolumn="52" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="304" endline="304" begincolumn="27" endcolumn="52" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="315" endline="316" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="319" endline="320" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="323" endline="324" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="327" endline="328" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="428" endline="428" begincolumn="28" endcolumn="56" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeBytes" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="430" endline="430" begincolumn="28" endcolumn="57" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeBytes" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="442" endline="443" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeBytes" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="446" endline="447" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeBytes" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="450" endline="451" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeBytes" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="681" endline="681" begincolumn="32" endcolumn="60" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decode" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="682" endline="682" begincolumn="32" endcolumn="59" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decode" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="683" endline="683" begincolumn="32" endcolumn="60" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decode" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="693" endline="695" begincolumn="17" endcolumn="17" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decode" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="700" endline="701" begincolumn="23" endcolumn="21" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decode" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="704" endline="705" begincolumn="23" endcolumn="21" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decode" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="708" endline="709" begincolumn="23" endcolumn="21" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decode" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="735" endline="735" begincolumn="24" endcolumn="51" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeToObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="736" endline="736" begincolumn="23" endcolumn="47" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeToObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="751" endline="752" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeToObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="755" endline="756" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeToObject" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="775" endline="775" begincolumn="25" endcolumn="48" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeToFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="786" endline="787" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeToFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="806" endline="806" begincolumn="25" endcolumn="48" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeToFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="816" endline="817" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeToFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="835" endline="835" begincolumn="37" endcolumn="48" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeFromFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="850" endline="850" begincolumn="46" endcolumn="72" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeFromFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="851" endline="851" begincolumn="25" endcolumn="47" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeFromFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="868" endline="869" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="decodeFromFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="887" endline="887" begincolumn="37" endcolumn="48" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeFromFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="893" endline="893" begincolumn="46" endcolumn="72" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeFromFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="894" endline="894" begincolumn="25" endcolumn="47" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeFromFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="911" endline="912" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64" method="encodeFromFile" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="1050" endline="1050" begincolumn="35" endcolumn="53" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64$InputStream" method="read" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="1087" endline="1087" begincolumn="27" endcolumn="45" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64$InputStream" method="read" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="1241" endline="1241" begincolumn="31" endcolumn="49" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64$OutputStream" method="write" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+<violation beginline="1281" endline="1281" begincolumn="31" endcolumn="49" rule="AvoidThreadGroup" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="Base64$OutputStream" method="flushBase64" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#AvoidThreadGroup" priority="3">
+Avoid using java.lang.ThreadGroup; it is not thread safe
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/ObjectGroup.java">
+<violation beginline="174" endline="174" begincolumn="21" endcolumn="26" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.tiled" class="ObjectGroup" method="removeObject" variable="object" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'object'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/TileSet.java">
+<violation beginline="185" endline="185" begincolumn="20" endcolumn="28" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.tiled" class="TileSet" variable="tileProps" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'tileProps'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/TiledMap.java">
+<violation beginline="45" endline="45" begincolumn="25" endcolumn="46" rule="UnusedPrivateMethod" ruleset="Unused Code Rules" package="org.newdawn.slick.tiled" class="TiledMap" method="setHeadless" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateMethod" priority="3">
+Avoid unused private methods such as 'setHeadless(boolean)'.
+</violation>
+<violation beginline="184" endline="184" begincolumn="13" endcolumn="15" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.tiled" class="TiledMap" method="getLayerIndex" variable="idx" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'idx'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/TiledMapPlus.java">
+<violation beginline="360" endline="360" begincolumn="29" endcolumn="46" rule="UselessOperationOnImmutable" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="TiledMapPlus" method="write" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UselessOperationOnImmutable" priority="3">
+An operation on an Immutable object (String, BigDecimal or BigInteger) won't change the object itself
+</violation>
+<violation beginline="370" endline="370" begincolumn="29" endcolumn="47" rule="UselessOperationOnImmutable" ruleset="Basic Rules" package="org.newdawn.slick.tiled" class="TiledMapPlus" method="write" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#UselessOperationOnImmutable" priority="3">
+An operation on an Immutable object (String, BigDecimal or BigInteger) won't change the object itself
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/util/BufferedImageUtil.java">
+<violation beginline="142" endline="142" begincolumn="25" endcolumn="106" rule="UnusedPrivateMethod" ruleset="Unused Code Rules" package="org.newdawn.slick.util" class="BufferedImageUtil" method="copyArea" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateMethod" priority="3">
+Avoid unused private methods such as 'copyArea(BufferedImage,int,int,int,int,int,int)'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/util/FastTrig.java">
+<violation beginline="19" endline="19" begincolumn="16" endcolumn="19" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.newdawn.slick.util" class="FastTrig" method="reduceSinAngle" variable="orig" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'orig'.
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/util/Log.java">
+<violation beginline="84" endline="86" begincolumn="11" endcolumn="9" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.util" class="Log" method="checkVerboseLogSetting" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/util/pathfinding/AStarPathFinder.java">
+<violation beginline="150" endline="152" begincolumn="17" endcolumn="17" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.util.pathfinding" class="AStarPathFinder" method="findPath" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+<violation beginline="170" endline="172" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.util.pathfinding" class="AStarPathFinder" method="findPath" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/util/pathfinding/navmesh/NavMeshBuilder.java">
+<violation beginline="70" endline="71" begincolumn="37" endcolumn="9" rule="EmptyWhileStmt" ruleset="Basic Rules" package="org.newdawn.slick.util.pathfinding.navmesh" class="NavMeshBuilder" method="build" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyWhileStmt" priority="3">
+Avoid empty while statements
+</violation>
+</file>
+<file name="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/util/xml/ObjectTreeParser.java">
+<violation beginline="197" endline="199" begincolumn="15" endcolumn="13" rule="EmptyCatchBlock" ruleset="Basic Rules" package="org.newdawn.slick.util.xml" class="ObjectTreeParser" method="getClassForElementName" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="418" endline="420" begincolumn="21" endcolumn="21" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="org.newdawn.slick.util.xml" class="ObjectTreeParser" method="findMethod" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+</pmd>

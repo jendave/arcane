@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+<duplication lines="44" tokens="231">
+<file line="184" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/AiffData.java"/>
+<file line="185" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/WaveData.java"/>
+<codefragment>
+<![CDATA[
+    public static AiffData create(AudioInputStream ais) {
+        //get format of data
+        AudioFormat audioformat = ais.getFormat();
+
+        // get channels
+        int channels = 0;
+        if (audioformat.getChannels() == 1) {
+            if (audioformat.getSampleSizeInBits() == 8) {
+                channels = AL10.AL_FORMAT_MONO8;
+            } else if (audioformat.getSampleSizeInBits() == 16) {
+                channels = AL10.AL_FORMAT_MONO16;
+            } else {
+                throw new RuntimeException("Illegal sample size");
+            }
+        } else if (audioformat.getChannels() == 2) {
+            if (audioformat.getSampleSizeInBits() == 8) {
+                channels = AL10.AL_FORMAT_STEREO8;
+            } else if (audioformat.getSampleSizeInBits() == 16) {
+                channels = AL10.AL_FORMAT_STEREO16;
+            } else {
+                throw new RuntimeException("Illegal sample size");
+            }
+        } else {
+            throw new RuntimeException("Only mono or stereo is supported");
+        }
+
+        //read data into buffer
+        byte[] buf =
+                new byte[audioformat.getChannels()
+                        * (int) ais.getFrameLength()
+                        * audioformat.getSampleSizeInBits()
+                        / 8];
+        int read = 0, total = 0;
+        try {
+            while ((read = ais.read(buf, total, buf.length - total)) != -1
+                    && total < buf.length) {
+                total += read;
+            }
+        } catch (IOException ioe) {
+            return null;
+        }
+
+        //insert data into bytebuffer
+        ByteBuffer buffer = convertAudioBytes(audioformat, buf, audioformat.getSampleSizeInBits() == 16);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="61" tokens="203">
+<file line="126" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/pbuffer/PBufferGraphics.java"/>
+<file line="121" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/pbuffer/PBufferUniqueGraphics.java"/>
+<codefragment>
+<![CDATA[
+        TextureImpl.unbind();
+        initGL();
+    }
+
+    /**
+     * Initialise the GL context
+     */
+    protected void initGL() {
+        GL11.glEnable(GL11.GL_TEXTURE_2D);
+        GL11.glShadeModel(GL11.GL_SMOOTH);
+        GL11.glDisable(GL11.GL_DEPTH_TEST);
+        GL11.glDisable(GL11.GL_LIGHTING);
+
+        GL11.glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+        GL11.glClearDepth(1);
+
+        GL11.glEnable(GL11.GL_BLEND);
+        GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+
+        GL11.glViewport(0, 0, screenWidth, screenHeight);
+        GL11.glMatrixMode(GL11.GL_MODELVIEW);
+        GL11.glLoadIdentity();
+
+        enterOrtho();
+    }
+
+    /**
+     * Enter the orthographic mode
+     */
+    protected void enterOrtho() {
+        GL11.glMatrixMode(GL11.GL_PROJECTION);
+        GL11.glLoadIdentity();
+        GL11.glOrtho(0, screenWidth, 0, screenHeight, 1, -1);
+        GL11.glMatrixMode(GL11.GL_MODELVIEW);
+    }
+
+    /**
+     * glOrtho is called with (0, screenWidth, 0, screenHeight, 1, -1) meaning the Y value is flipped
+     */
+    protected boolean isYFlipped() {
+        return true;
+    }
+
+    /**
+     * @see org.newdawn.slick.Graphics#destroy()
+     */
+    public void destroy() {
+        super.destroy();
+
+        pbuffer.destroy();
+    }
+
+    /**
+     * @see org.newdawn.slick.Graphics#flush()
+     */
+    public void flush() {
+        super.flush();
+
+        image.flushPixelData();
+    }
+}
+]]>
+</codefragment>
+</duplication>
+<duplication lines="35" tokens="195">
+<file line="290" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/AppGameContainer.java"/>
+<file line="364" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/AppletGameContainer.java"/>
+<codefragment>
+<![CDATA[
+            Mouse.setNativeCursor(cursor);
+        } catch (Throwable e) {
+            Log.error("Failed to load and apply cursor.", e);
+            throw new SlickException("Failed to set mouse cursor", e);
+        }
+    }
+
+    /**
+     * Get the closest greater power of 2 to the fold number
+     *
+     * @param fold The target number
+     * @return The power of 2
+     */
+    private int get2Fold(int fold) {
+        int ret = 2;
+        while (ret < fold) {
+            ret *= 2;
+        }
+        return ret;
+    }
+
+    /**
+     * @see org.newdawn.slick.GameContainer#setMouseCursor(org.newdawn.slick.Image, int, int)
+     */
+    public void setMouseCursor(Image image, int hotSpotX, int hotSpotY) throws SlickException {
+        try {
+            Image temp = new Image(get2Fold(image.getWidth()), get2Fold(image.getHeight()));
+            Graphics g = temp.getGraphics();
+
+            ByteBuffer buffer = BufferUtils.createByteBuffer(temp.getWidth() * temp.getHeight() * 4);
+            g.drawImage(image.getFlippedCopy(false, true), 0, 0);
+            g.flush();
+            g.getArea(0, 0, temp.getWidth(), temp.getHeight(), buffer);
+
+            Cursor cursor = CursorLoader.get().getCursor(buffer, hotSpotX, hotSpotY, temp.getWidth(), image.getHeight());
+]]>
+</codefragment>
+</duplication>
+<duplication lines="48" tokens="176">
+<file line="188" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/pbuffer/FBOGraphics.java"/>
+<file line="126" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/pbuffer/PBufferGraphics.java"/>
+<file line="121" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/pbuffer/PBufferUniqueGraphics.java"/>
+<codefragment>
+<![CDATA[
+        bind();
+        initGL();
+    }
+
+    /**
+     * Initialise the GL context
+     */
+    protected void initGL() {
+        GL11.glEnable(GL11.GL_TEXTURE_2D);
+        GL11.glShadeModel(GL11.GL_SMOOTH);
+        GL11.glDisable(GL11.GL_DEPTH_TEST);
+        GL11.glDisable(GL11.GL_LIGHTING);
+
+        GL11.glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+        GL11.glClearDepth(1);
+
+        GL11.glEnable(GL11.GL_BLEND);
+        GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+
+        GL11.glViewport(0, 0, screenWidth, screenHeight);
+        GL11.glMatrixMode(GL11.GL_MODELVIEW);
+        GL11.glLoadIdentity();
+
+        enterOrtho();
+    }
+
+    /**
+     * Enter the orthographic mode
+     */
+    protected void enterOrtho() {
+        GL11.glMatrixMode(GL11.GL_PROJECTION);
+        GL11.glLoadIdentity();
+        GL11.glOrtho(0, screenWidth, 0, screenHeight, 1, -1);
+        GL11.glMatrixMode(GL11.GL_MODELVIEW);
+    }
+
+    /**
+     * glOrtho is called with (0, screenWidth, 0, screenHeight, 1, -1) meaning the Y value is flipped
+     */
+    protected boolean isYFlipped() {
+        return true;
+    }
+
+    /**
+     * @see org.newdawn.slick.Graphics#destroy()
+     */
+    public void destroy() {
+        super.destroy();
+]]>
+</codefragment>
+</duplication>
+<duplication lines="117" tokens="141">
+<file line="795" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/UnicodeFont.java"/>
+<file line="155" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/font/HieroSettings.java"/>
+<codefragment>
+<![CDATA[
+    }
+
+    /**
+     * Returns the padding above a glyph on the GlyphPage to allow for effects to be drawn.
+     *
+     * @return The padding at the top of the glyphs when drawn
+     */
+    public int getPaddingTop() {
+        return paddingTop;
+    }
+
+    /**
+     * Sets the padding above a glyph on the GlyphPage to allow for effects to be drawn.
+     *
+     * @param paddingTop The padding at the top of the glyphs when drawn
+     */
+    public void setPaddingTop(int paddingTop) {
+        this.paddingTop = paddingTop;
+    }
+
+    /**
+     * Returns the padding to the left of a glyph on the GlyphPage to allow for effects to be drawn.
+     *
+     * @return The padding at the left of the glyphs when drawn
+     */
+    public int getPaddingLeft() {
+        return paddingLeft;
+    }
+
+    /**
+     * Sets the padding to the left of a glyph on the GlyphPage to allow for effects to be drawn.
+     *
+     * @param paddingLeft The padding at the left of the glyphs when drawn
+     */
+    public void setPaddingLeft(int paddingLeft) {
+        this.paddingLeft = paddingLeft;
+    }
+
+    /**
+     * Returns the padding below a glyph on the GlyphPage to allow for effects to be drawn.
+     *
+     * @return The padding at the bottom of the glyphs when drawn
+     */
+    public int getPaddingBottom() {
+        return paddingBottom;
+    }
+
+    /**
+     * Sets the padding below a glyph on the GlyphPage to allow for effects to be drawn.
+     *
+     * @param paddingBottom The padding at the bottom of the glyphs when drawn
+     */
+    public void setPaddingBottom(int paddingBottom) {
+        this.paddingBottom = paddingBottom;
+    }
+
+    /**
+     * Returns the padding to the right of a glyph on the GlyphPage to allow for effects to be drawn.
+     *
+     * @return The padding at the right of the glyphs when drawn
+     */
+    public int getPaddingRight() {
+        return paddingRight;
+    }
+
+    /**
+     * Sets the padding to the right of a glyph on the GlyphPage to allow for effects to be drawn.
+     *
+     * @param paddingRight The padding at the right of the glyphs when drawn
+     */
+    public void setPaddingRight(int paddingRight) {
+        this.paddingRight = paddingRight;
+    }
+
+    /**
+     * Gets the additional amount to offset glyphs on the x axis.
+     *
+     * @return The padding applied for each horizontal advance (i.e. when a glyph is rendered)
+     */
+    public int getPaddingAdvanceX() {
+        return paddingAdvanceX;
+    }
+
+    /**
+     * Sets the additional amount to offset glyphs on the x axis. This is typically set to a negative number when left or right
+     * padding is used so that glyphs are not spaced too far apart.
+     *
+     * @param paddingAdvanceX The padding applied for each horizontal advance (i.e. when a glyph is rendered)
+     */
+    public void setPaddingAdvanceX(int paddingAdvanceX) {
+        this.paddingAdvanceX = paddingAdvanceX;
+    }
+
+    /**
+     * Gets the additional amount to offset a line of text on the y axis.
+     *
+     * @return The padding applied for each vertical advance (i.e. when a glyph is rendered)
+     */
+    public int getPaddingAdvanceY() {
+        return paddingAdvanceY;
+    }
+
+    /**
+     * Sets the additional amount to offset a line of text on the y axis. This is typically set to a negative number when top or
+     * bottom padding is used so that lines of text are not spaced too far apart.
+     *
+     * @param paddingAdvanceY The padding applied for each vertical advance (i.e. when a glyph is rendered)
+     */
+    public void setPaddingAdvanceY(int paddingAdvanceY) {
+        this.paddingAdvanceY = paddingAdvanceY;
+    }
+
+    /**
+     * Returns the distance from one line of text to the next. This is the sum of the descent, ascent, leading, padding top,
+     * padding bottom, and padding advance y. To change the line height, use {@link #setPaddingAdvanceY(int)}.
+     */
+    public int getLineHeight() {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="20" tokens="138">
+<file line="81" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/inkscape/DefsProcessor.java"/>
+<file line="131" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/svg/inkscape/DefsProcessor.java"/>
+<codefragment>
+<![CDATA[
+                NodeList steps = lin.getElementsByTagName("stop");
+                for (int j = 0; j < steps.getLength(); j++) {
+                    Element s = (Element) steps.item(j);
+                    float offset = Float.parseFloat(s.getAttribute("offset"));
+
+                    String colInt = Util.extractStyle(s.getAttribute("style"), "stop-color");
+                    String opaInt = Util.extractStyle(s.getAttribute("style"), "stop-opacity");
+
+                    int col = Integer.parseInt(colInt.substring(1), 16);
+                    Color stopColor = new Color(col);
+                    stopColor.a = Float.parseFloat(opaInt);
+
+                    gradient.addStep(offset, stopColor);
+                }
+
+                gradient.getImage();
+            }
+
+            diagram.addGradient(name, gradient);
+        }
+]]>
+</codefragment>
+</duplication>
+<duplication lines="32" tokens="133">
+<file line="137" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/GroupObject.java"/>
+<file line="204" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/GroupObject.java"/>
+<codefragment>
+<![CDATA[
+        }
+        x = Integer.parseInt(element.getAttribute("x"));
+        y = Integer.parseInt(element.getAttribute("y"));
+
+        // now read the layer properties
+        Element propsElement = (Element) element.getElementsByTagName(
+                "properties").item(0);
+        if (propsElement != null) {
+            NodeList properties = propsElement.getElementsByTagName("property");
+            if (properties != null) {
+                props = new Properties();
+                for (int p = 0; p < properties.getLength(); p++) {
+                    Element propElement = (Element) properties.item(p);
+
+                    String name = propElement.getAttribute("name");
+                    String value = propElement.getAttribute("value");
+                    props.setProperty(name, value);
+                }
+            }
+        }
+    }
+
+    /**
+     * Create a new group based on the XML definition
+     *
+     * @param element The XML element describing the layer
+     * @param map     The map this object belongs to
+     * @throws SlickException Indicates a failure to parse the XML group
+     * @author kulpae
+     * @author liamzebedee
+     */
+    public GroupObject(Element element, TiledMapPlus map) throws SlickException {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="19" tokens="131">
+<file line="1029" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/Image.java"/>
+<file line="1121" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/Image.java"/>
+<codefragment>
+<![CDATA[
+        texture.bind();
+
+        GL.glTranslatef(x, y, 0);
+        if (angle != 0) {
+            GL.glTranslatef(centerX, centerY, 0.0f);
+            GL.glRotatef(angle, 0.0f, 0.0f, 1.0f);
+            GL.glTranslatef(-centerX, -centerY, 0.0f);
+        }
+
+        GL.glBegin(SGL.GL_QUADS);
+        drawEmbedded(0, 0, width, height);
+        GL.glEnd();
+
+        if (angle != 0) {
+            GL.glTranslatef(centerX, centerY, 0.0f);
+            GL.glRotatef(-angle, 0.0f, 0.0f, 1.0f);
+            GL.glTranslatef(-centerX, -centerY, 0.0f);
+        }
+        GL.glTranslatef(-x, -y, 0);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="12" tokens="128">
+<file line="152" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/PNGImageData.java"/>
+<file line="289" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/TGAImageData.java"/>
+<codefragment>
+<![CDATA[
+            }
+        }
+        if (width < texWidth - 1) {
+            for (int y = 0; y < texHeight; y++) {
+                for (int i = 0; i < perPixel; i++) {
+                    scratch.put(((y + 1) * (texWidth * perPixel)) - perPixel + i, scratch.get(y * (texWidth * perPixel) + i));
+                    scratch.put((y * (texWidth * perPixel)) + (width * perPixel) + i, scratch.get((y * (texWidth * perPixel)) + ((width - 1) * perPixel) + i));
+                }
+            }
+        }
+
+        scratch.position(0);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="10" tokens="122">
+<file line="46" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/OverTriangulator.java"/>
+<file line="67" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/geom/OverTriangulator.java"/>
+<codefragment>
+<![CDATA[
+                pt1[1] = (pt1[1] + pt2[1]) / 2;
+
+                triangles[(tcount * 3) + 0][0] = cx;
+                triangles[(tcount * 3) + 0][1] = cy;
+                triangles[(tcount * 3) + 1][0] = pt1[0];
+                triangles[(tcount * 3) + 1][1] = pt1[1];
+                triangles[(tcount * 3) + 2][0] = pt2[0];
+                triangles[(tcount * 3) + 2][1] = pt2[1];
+                tcount++;
+            }
+]]>
+</codefragment>
+</duplication>
+<duplication lines="31" tokens="120">
+<file line="707" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/SoundStore.java"/>
+<file line="779" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/openal/SoundStore.java"/>
+<codefragment>
+<![CDATA[
+                AiffData data = AiffData.create(in);
+                AL10.alGenBuffers(buf);
+                AL10.alBufferData(buf.get(0), data.format, data.data, data.samplerate);
+
+                loaded.put(ref, new Integer(buf.get(0)));
+                buffer = buf.get(0);
+            } catch (Exception e) {
+                Log.error(e);
+                IOException x = new IOException("Failed to load: " + ref);
+                x.initCause(e);
+
+                throw x;
+            }
+        }
+
+        if (buffer == -1) {
+            throw new IOException("Unable to load: " + ref);
+        }
+
+        return new AudioImpl(this, buffer);
+    }
+
+
+    /**
+     * Get the Sound based on a specified WAV file
+     *
+     * @param ref The reference to the WAV file in the classpath
+     * @return The Sound read from the WAV file
+     * @throws IOException Indicates a failure to load the WAV
+     */
+    public Audio getWAV(String ref) throws IOException {
+]]>
+</codefragment>
+</duplication>
+<duplication lines="26" tokens="116">
+<file line="270" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/AppGameContainer.java"/>
+<file line="411" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/AppletGameContainer.java"/>
+<codefragment>
+<![CDATA[
+    }
+
+    /**
+     * @see org.newdawn.slick.GameContainer#setMouseCursor(org.newdawn.slick.opengl.ImageData, int, int)
+     */
+    public void setMouseCursor(ImageData data, int hotSpotX, int hotSpotY) throws SlickException {
+        try {
+            Cursor cursor = CursorLoader.get().getCursor(data, hotSpotX, hotSpotY);
+            Mouse.setNativeCursor(cursor);
+        } catch (Throwable e) {
+            Log.error("Failed to load and apply cursor.", e);
+            throw new SlickException("Failed to set mouse cursor", e);
+        }
+    }
+
+    /**
+     * @see org.newdawn.slick.GameContainer#setMouseCursor(org.lwjgl.input.Cursor, int, int)
+     */
+    public void setMouseCursor(Cursor cursor, int hotSpotX, int hotSpotY) throws SlickException {
+        try {
+            Mouse.setNativeCursor(cursor);
+        } catch (Throwable e) {
+            Log.error("Failed to load and apply cursor.", e);
+            throw new SlickException("Failed to set mouse cursor", e);
+        }
+    }
+]]>
+</codefragment>
+</duplication>
+<duplication lines="14" tokens="113">
+<file line="423" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/PNGDecoder.java"/>
+<file line="446" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/PNGDecoder.java"/>
+<file line="469" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/opengl/PNGDecoder.java"/>
+<codefragment>
+<![CDATA[
+    private void copyRGBtoABGR(ByteBuffer buffer, byte[] curLine) {
+        if (transPixel != null) {
+            byte tr = transPixel[1];
+            byte tg = transPixel[3];
+            byte tb = transPixel[5];
+            for (int i = 1, n = curLine.length; i < n; i += 3) {
+                byte r = curLine[i];
+                byte g = curLine[i + 1];
+                byte b = curLine[i + 2];
+                byte a = (byte) 0xFF;
+                if (r == tr && g == tg && b == tb) {
+                    a = 0;
+                }
+                buffer.put(a).put(b).put(g).put(r);
+]]>
+</codefragment>
+</duplication>
+<duplication lines="14" tokens="107">
+<file line="99" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/GroupObject.java"/>
+<file line="174" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/GroupObject.java"/>
+<codefragment>
+<![CDATA[
+        if (objectType == ObjectType.IMAGE) {
+            if (element.getAttribute("width") != "") {
+                width = Integer.parseInt(element.getAttribute("width"));
+            }
+            if (element.getAttribute("height") != "") {
+                height = Integer.parseInt(element.getAttribute("height"));
+            }
+            if (element.getAttribute("name") != "") {
+                name = element.getAttribute("name");
+            }
+            if (element.getAttribute("type") != "") {
+                type = element.getAttribute("type");
+            }
+        } else if ((objectType == ObjectType.POLYGON)
+]]>
+</codefragment>
+</duplication>
+<duplication lines="18" tokens="105">
+<file line="111" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/Layer.java"/>
+<file line="107" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/ObjectGroup.java"/>
+<codefragment>
+<![CDATA[
+        }
+
+        // now read the layer properties
+        Element propsElement = (Element) element.getElementsByTagName(
+                "properties").item(0);
+        if (propsElement != null) {
+            NodeList properties = propsElement.getElementsByTagName("property");
+            if (properties != null) {
+                props = new Properties();
+                for (int p = 0; p < properties.getLength(); p++) {
+                    Element propElement = (Element) properties.item(p);
+
+                    String name = propElement.getAttribute("name");
+                    String value = propElement.getAttribute("value");
+                    props.setProperty(name, value);
+                }
+            }
+        }
+]]>
+</codefragment>
+</duplication>
+<duplication lines="15" tokens="104">
+<file line="142" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/GroupObject.java"/>
+<file line="209" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/GroupObject.java"/>
+<file line="114" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/Layer.java"/>
+<file line="110" path="/Users/dhudson/hg/slick-maven/Slick/target/checkout/Slick/slick/src/main/java/org/newdawn/slick/tiled/ObjectGroup.java"/>
+<codefragment>
+<![CDATA[
+        Element propsElement = (Element) element.getElementsByTagName(
+                "properties").item(0);
+        if (propsElement != null) {
+            NodeList properties = propsElement.getElementsByTagName("property");
+            if (properties != null) {
+                props = new Properties();
+                for (int p = 0; p < properties.getLength(); p++) {
+                    Element propElement = (Element) properties.item(p);
+
+                    String name = propElement.getAttribute("name");
+                    String value = propElement.getAttribute("value");
+                    props.setProperty(name, value);
+                }
+            }
+        }
+]]>
+</codefragment>
+</duplication>
+</pmd-cpd>
